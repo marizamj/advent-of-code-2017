@@ -1,0 +1,23 @@
+{
+  "name": "advent-of-code-2017",
+  "version": "1.0.0",
+  "description": "http://adventofcode.com/2017",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^21.2.1"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marizamj/advent-of-code-2017.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marizamj/advent-of-code-2017/issues"
+  },
+  "homepage": "https://github.com/marizamj/advent-of-code-2017#readme"
+}

@@ -1,21 +1,9 @@
 const fs = require('fs');
 
 const input = fs
-  .readFileSync('./input.txt')
+  .readFileSync(__dirname + '/input.txt')
   .toString()
   .trim();
-
-const test1 = `
-5 1 9 5
-7 5 3
-2 4 6 8
-`.trim();
-
-const test2 = `
-5 9 2 8
-9 4 7 3
-3 8 6 5
-`.trim();
 
 const splitRow = row => row.split(/\s+/).map(el => Number(el));
 
@@ -47,6 +35,10 @@ const findChecksum = (spreadshit, part) =>
       0
     );
 
-const answer = findChecksum(input, 2);
+const answer_1 = findChecksum(input, 1);
+const answer_2 = findChecksum(input, 2);
 
-console.log(answer);
+console.log('Day 2, answer 1:', answer_1);
+console.log('Day 2, answer 2:', answer_2);
+
+module.exports = findChecksum;
